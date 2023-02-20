@@ -159,7 +159,7 @@ func newAnimal(anType, anName string, animals animals) {
 	case "snake":
 		animals[anName] = Cow{"mice", "slither", "hsss"}
 	}
-	fmt.Printf("\033[1;32mYour animal %s was added!!\033[0m\n\n", anName)
+	fmt.Printf("\033[1;32mCreated it!!\033[0m\n\n")
 }
 
 func queryAnimal(anName, method string, animals animals) {
@@ -169,7 +169,7 @@ func queryAnimal(anName, method string, animals animals) {
 		fmt.Printf("\033[34m%s eats \033[0m", anName)
 		animal.Eat()
 	case "move":
-		fmt.Printf("\033[34m%s can\033[0m", anName)
+		fmt.Printf("\033[34m%s can \033[0m", anName)
 		animal.Move()
 	case "speak":
 		fmt.Printf("\033[34m%s speaks \033[0m", anName)
