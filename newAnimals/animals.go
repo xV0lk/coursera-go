@@ -155,9 +155,9 @@ func newAnimal(anType, anName string, animals animals) {
 	case "cow":
 		animals[anName] = Cow{"grass", "walk", "moo"}
 	case "bird":
-		animals[anName] = Cow{"worms", "fly", "peep"}
+		animals[anName] = Bird{"worms", "fly", "peep"}
 	case "snake":
-		animals[anName] = Cow{"mice", "slither", "hsss"}
+		animals[anName] = Snake{"mice", "slither", "hsss"}
 	}
 	fmt.Printf("\033[1;32mCreated it!!\033[0m\n\n")
 }
